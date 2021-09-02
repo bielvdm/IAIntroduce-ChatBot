@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- chat bot -->
+        <div>
+            <img class="balaoChat" src="img/balao.png" alt="">
+            <img id="chatimg" class="imagemChat" src="img/robot-wave-waving-unscreen.gif" alt="foto do chat bot" >
+        </div>
+
+        <div id="chatbot-container" class="chatbot-container">
+            <div class="chatbot-content">
+                <button id="fechar">x</button>
+                <iframe class="chatbot" src='https://webchat.botframework.com/embed/ChatBot138871617?s=_O61Lo0U3mg.uHJHWkf9LjaPnXxQrQJRCiUUM9uegUEfFDsYPMgVTws'></iframe>
+            </div>
+        </div>
+    
+    <!-- chat bot -->
+
+    <section class="content-banner">
+        <div  class="titulo">
+            <h1>Grupo 2</h1>
+        </div>
+        <div class="container-banner">
+            <div class="texto-banner">
+                <h1>Inteligência Artificial</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis laboriosam pariatur itaque quo, fugit vel nobis quam ducimus necessitatibus, maxime beatae odio asperiores facilis et numquam perferendis rerum tempore nostrum?</p>
+                <a href="#secaoEquipe"><button>Conheça nossa equipe</button></a>
+            </div>
+            <div class="imagem-banner">
+                <img class="robo-banner" src="img/robo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="secaoEquipe" class="contentEquipe">
+        
+        
+        <h1 class="tituloEquipe">Nossa equipe</h1>
+
+        <div class="containerEquipe">
+
+            <div class="fotoEquipe">
+                <img class="fotoIntegrante" src="img/FOTO PERFIL.jpg" alt="foto do integrante">
+                <p>Gabriel Viana</p>
+            </div>
+            <div class="fotoEquipe">
+                <img class="fotoIntegrante" src="img/Luana.jpg" alt="foto do integrante">
+                <p>Luana Silva</p>
+            </div>
+            <div class="fotoEquipe">
+                <img class="fotoIntegrante" src="img/vitor.jpg" alt="foto do integrante">
+                <p>Vitor Manoel</p>
+            </div>
+            <div class="fotoEquipe">
+                <img class="fotoIntegrante" src="img/Vinicius.jpg" alt="foto do integrante">
+                <p>Vinicius Silva</p>
+            </div>
+            <div class="fotoEquipe">
+                <img class="fotoIntegrante" src="img/FOTO PERFIL.jpg" alt="foto do integrante">
+                <p>Gabriel Viana</p>
+            </div>
+            <div class="fotoEquipe">
+                <img class="fotoIntegrante" src="img/FOTO PERFIL.jpg" alt="foto do integrante">
+                <p>Gabriel Viana</p>
+            </div>
+            <div class="fotoEquipe">
+                <img class="fotoIntegrante" src="img/FOTO PERFIL.jpg" alt="foto do integrante">
+                <p>Gabriel Viana</p>
+            </div>
+            <div class="fotoEquipe">
+                <img class="fotoIntegrante" src="img/FOTO PERFIL.jpg" alt="foto do integrante">
+                <p>Gabriel Viana</p>
+            </div>
+            <div class="fotoEquipe">
+                <img class="fotoIntegrante" src="img/FOTO PERFIL.jpg" alt="foto do integrante">
+                <p>Gabriel Viana</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+	
+        function abreChat (id) {
+            const chat = document.getElementById(id)
+            chat.classList.add('mostrar')
+
+            chat.addEventListener('click', (e)=> {
+            if(e.target.id === "chatbot-container" || e.target.id === "fechar"){
+            chat.classList.remove('mostrar')
+            }
+            })
+        }
+
+        const fotoChat = document.getElementById('chatimg')
+        fotoChat.addEventListener('click', ()=> abreChat('chatbot-container'))
+
+	</script>
+</body>
+</html>

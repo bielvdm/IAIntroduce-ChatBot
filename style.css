@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;  
+    height: 12px;             
+}
+
+body::-webkit-scrollbar-track {
+    background: #740969; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #c839ba;  
+}
+
+.content-banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/fundo.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-banner{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+    color: #c839ba;
+    font-family: 'poppins';
+    font-size: 25px;
+    width: 90%;
+    height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.texto-banner{
+    width: 400px;
+    margin-bottom: 100px;
+}
+
+.texto-banner h1{
+    font-family: 'poppins';
+    font-size: 50px;
+    color: #c839ba;
+}
+
+.texto-banner button {
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #c839ba , #1cb3d5);
+    border: 0;
+    cursor: pointer;
+    font-family: 'poppins';
+    color: #fff;
+    margin-top: 10px;
+}
+
+.texto-banner p {
+    color: #fff;
+    margin-top: -40px;
+    font-family: 'poppins';
+    font-size: 15px;
+}
+
+.robo-banner{
+    width: 80%;
+}
+
+.imagemChat{
+    position: fixed;
+    width: 60px;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+}
+.balaoChat{
+    position: fixed;
+    width: 10%;
+    bottom: 40px;
+    right: 90px;
+    cursor: pointer;
+}
+
+.chatbot-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.301);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    z-index: 2000;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chatbot{
+    width: 350px;
+    height: 450px;
+    border-radius: 4px;
+    margin-top: 200px;
+    margin-right: 40px;
+}
+
+@keyframes animacaoAbrir {
+    0% {
+        transform: scale(0.9,0.9);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.mostrar .chatbot , #fechar {
+    animation: animacaoAbrir 0.3s;
+}
+#fechar{
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    background-color: transparent;
+    border: 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.mostrar {
+    display: flex;
+}
+
+.fechar {
+    display: none;
+}
+
+.fotoIntegrante{
+    width: 150px;
+    border-radius: 100%;
+}
+
+.fotoEquipe{
+    width: 200px;
+    color: #fff;
+    font-family: 'poppins';
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentEquipe{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: linear-gradient(to right,  #260556 , #3c065f, #45108a);
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerEquipe {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.tituloEquipe{
+    color: #c839ba;
+    font-family: 'poppins';
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
