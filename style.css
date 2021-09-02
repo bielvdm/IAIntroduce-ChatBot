@@ -115,6 +115,13 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
+.fundoBot{
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    width: 355px;
+}
+
 .chatbot{
     width: 350px;
     height: 450px;
@@ -132,8 +139,8 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.mostrar .chatbot , #fechar {
-    animation: animacaoAbrir 0.3s;
+.mostrar .chatbot , #fechar, .fundoBot{
+    animation: animacaoAbrir 0.5s;
 }
 #fechar{
     position: absolute;
@@ -159,7 +166,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .fotoEquipe{
-    width: 200px;
+    width: 210px;
     color: #fff;
     font-family: 'poppins';
     font-size: 24px;
