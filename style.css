@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }
@@ -10,11 +14,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #740969; 
+    background: #c839ba; 
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #c839ba;  
+    background-color: #740969;  
 }
 
 .content-banner{
