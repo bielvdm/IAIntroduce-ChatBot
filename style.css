@@ -117,16 +117,16 @@ body::-webkit-scrollbar-thumb {
 
 .fundoBot{
     position: absolute;
-    top: 200px;
+    top: 130px;
     right: 40px;
     width: 355px;
 }
 
 .chatbot{
     width: 350px;
-    height: 450px;
+    height: 500px;
     border-radius: 4px;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-right: 40px;
 }
 
@@ -144,7 +144,7 @@ body::-webkit-scrollbar-thumb {
 }
 #fechar{
     position: absolute;
-    top: 200px;
+    top: 130px;
     right: 40px;
     background-color: transparent;
     border: 0;
@@ -185,7 +185,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .containerEquipe {
-    width: 85%;
+    width: 77%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
