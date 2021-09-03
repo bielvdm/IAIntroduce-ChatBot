@@ -117,16 +117,16 @@ body::-webkit-scrollbar-thumb {
 
 .fundoBot{
     position: absolute;
-    top: 130px;
+    top: 125px;
     right: 40px;
-    width: 355px;
+    width: 350px;
 }
 
 .chatbot{
     width: 350px;
     height: 500px;
     border-radius: 4px;
-    margin-top: 150px;
+    margin-top: 125px;
     margin-right: 40px;
 }
 
@@ -198,4 +198,16 @@ body::-webkit-scrollbar-thumb {
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 480px){
+    .robo-banner{
+        display: none;
+    }
+    .chatbot{
+        margin-top: 155px !important;
+    }
+    .balaoChat{
+        width: 40%;
+    }
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Bot</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
 </head>
 <body>
     <!-- chat bot -->
@@ -16,7 +17,8 @@
 
         <div id="chatbot-container" class="chatbot-container">
             <div class="chatbot-content">
-                <iframe id="webchat" class="chatbot" src='https://webchat.botframework.com/embed/ChatBotSENAI?s=9lkxNzrj2BI.Z2khzhtCLv7BcXkF-DjRj-lnLmQ374SIkk8PIofxdZI'></iframe>
+                 <div id="webchat" class="chatbot"  style="height: 60%; width: 40%;" role="main"></div>
+                <!-- <iframe id="webchat" class="chatbot" src='https://webchat.botframework.com/embed/ChatBotSENAI?s=9lkxNzrj2BI.Z2khzhtCLv7BcXkF-DjRj-lnLmQ374SIkk8PIofxdZI'></iframe> -->
                 <img class = "fundoBot" src="img/fundoBot.png" alt="">
                 <button id="fechar">x</button>
             </div>
@@ -103,6 +105,45 @@
         const fotoChat = document.getElementById('chatimg')
         fotoChat.addEventListener('click', ()=> abreChat('chatbot-container'))
 
+        
+     // Set  the CSS rules.
+     const styleSet = window.WebChat.createStyleSet({
+        //  bubbleBackground: 'rgba(0, 0, 255, .1)',
+        //  bubbleFromUserBackground: 'rgba(0, 255, 0, .1)',
+         rootHeight: '500px',
+         rootWidth: '350px',
+         backgroundColor: '#400A6F'
+      });
+
+      // After generated, you can modify the CSS rules.
+      // Change font family and weight. 
+      styleSet.textContent = {
+         ...styleSet.textContent,
+         fontFamily: "'Arial', 'Arial', sans-serif"
+        //  ,
+        //  fontWeight: 'bold'
+      };
+
+    // Set the avatar options. 
+    //  const avatarOptions = {
+    //      botAvatarInitials: 'LN',
+    //      userAvatarInitials: 'CB'
+    //      };
+
+    const avatarOptions = {
+        botAvatarImage: 'https://i.ibb.co/9swdV2n/image-removebg-preview-4-2.png',
+        botAvatarInitials: 'CB',
+        userAvatarImage: 'http://spanefertiti.com.br/wp-content/uploads/2020/11/avatar-depoimento.png',
+        userAvatarInitials: 'US'
+     };
+
+    window.WebChat.renderWebChat({
+      directLine: window.WebChat.createDirectLine({
+          token: '9lkxNzrj2BI.Z2khzhtCLv7BcXkF-DjRj-lnLmQ374SIkk8PIofxdZI'}),
+      styleSet,
+      styleOptions: avatarOptions
+    }, document.getElementById('webchat'));
+    
 	</script>
 </body>
 </html>
